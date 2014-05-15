@@ -1,14 +1,20 @@
 PODS:
-  - RPBorderlessSegmentedControl (1.0.0)
+  - FBSnapshotTestCase (1.1)
+  - RPBorderlessSegmentedControl (1.0.1)
 
 DEPENDENCIES:
+  - FBSnapshotTestCase (from `git@github.com:RobotsAndPencils/ios-snapshot-test-case.git`, branch `OSXSupport`)
   - RPBorderlessSegmentedControl (from `../RPBorderlessSegmentedControl.podspec`)
 
 EXTERNAL SOURCES:
+  FBSnapshotTestCase:
+    :branch: OSXSupport
+    :git: git@github.com:RobotsAndPencils/ios-snapshot-test-case.git
   RPBorderlessSegmentedControl:
     :path: ../RPBorderlessSegmentedControl.podspec
 
 SPEC CHECKSUMS:
-  RPBorderlessSegmentedControl: 9610eaae1b148b5bc91b2d588eb9811a764b1f52
+  FBSnapshotTestCase: 9be5167d4f80cd01265fb83cdadf8f10f015a094
+  RPBorderlessSegmentedControl: c6ed384e6b779fbb919f752459eddf0706cdf0bb
 
 COCOAPODS: 0.32.1

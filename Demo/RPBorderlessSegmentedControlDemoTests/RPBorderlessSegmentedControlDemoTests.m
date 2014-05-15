@@ -6,29 +6,25 @@
 //  Copyright (c) 2014 Brandon Evans. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+#import <FBSnapshotTestCase/FBSnapshotTestCaseMac.h>
+#import "RPBorderlessSegmentedControl.h"
 
-@interface RPBorderlessSegmentedControlDemoTests : XCTestCase
+@interface RPBorderlessSegmentedControlDemoTests : FBSnapshotTestCase
 
 @end
 
 @implementation RPBorderlessSegmentedControlDemoTests
 
-- (void)setUp
-{
+- (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.recordMode = NO;
 }
 
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+- (void)testExample {
+    RPBorderlessSegmentedControl *control = [[RPBorderlessSegmentedControl alloc] initWithFrame:NSMakeRect(0, 0, 120, 24)];
+    [control setSegmentCount:1];
+    [control setImage:[NSImage imageNamed:@"Alignment"] forSegment:0];
+    FBSnapshotVerifyView(control, @"SingleUnhighlighted");
 }
 
 @end

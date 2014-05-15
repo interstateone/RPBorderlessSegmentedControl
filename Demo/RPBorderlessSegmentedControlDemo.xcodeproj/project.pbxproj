@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51248A1BD80144F3952C9182 /* libPods-RPBorderlessSegmentedControlDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD32F95DA2D43EF86DD8DE0 /* libPods-RPBorderlessSegmentedControlDemoTests.a */; };
 		9C48E5FC5EF2452490B4CE18 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C631C0720AE24D7F87FB47A0 /* libPods.a */; };
 		CA5EEF2618FDF54F00886FF1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA5EEF2418FDF54F00886FF1 /* MainMenu.xib */; };
 		CA5EEF2B18FDF5B700886FF1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CA5EEF2718FDF5B700886FF1 /* Credits.rtf */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		35278A40C7BE4E7A9BD51944 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		7DB85ABBCDDF43AB9108A518 /* Pods-RPBorderlessSegmentedControlDemoTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPBorderlessSegmentedControlDemoTests.xcconfig"; path = "Pods/Pods-RPBorderlessSegmentedControlDemoTests.xcconfig"; sourceTree = "<group>"; };
 		C631C0720AE24D7F87FB47A0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5EEF2518FDF54F00886FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		CA5EEF2818FDF5B700886FF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		CAB5B36B18A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPBorderlessSegmentedControlDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB5B36C18A9CCB000F2BE1F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CAB5B37718A9CCB000F2BE1F /* RPBorderlessSegmentedControlDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPBorderlessSegmentedControlDemoTests.m; sourceTree = "<group>"; };
+		DCD32F95DA2D43EF86DD8DE0 /* libPods-RPBorderlessSegmentedControlDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RPBorderlessSegmentedControlDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,7 @@
 			files = (
 				CAB5B36E18A9CCB000F2BE1F /* Cocoa.framework in Frameworks */,
 				CAB5B36D18A9CCB000F2BE1F /* XCTest.framework in Frameworks */,
+				51248A1BD80144F3952C9182 /* libPods-RPBorderlessSegmentedControlDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +89,7 @@
 				CAB5B34C18A9CCB000F2BE1F /* Frameworks */,
 				CAB5B34B18A9CCB000F2BE1F /* Products */,
 				35278A40C7BE4E7A9BD51944 /* Pods.xcconfig */,
+				7DB85ABBCDDF43AB9108A518 /* Pods-RPBorderlessSegmentedControlDemoTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +109,7 @@
 				CAB5B36C18A9CCB000F2BE1F /* XCTest.framework */,
 				CAB5B34F18A9CCB000F2BE1F /* Other Frameworks */,
 				C631C0720AE24D7F87FB47A0 /* libPods.a */,
+				DCD32F95DA2D43EF86DD8DE0 /* libPods-RPBorderlessSegmentedControlDemoTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAB5B37E18A9CCB000F2BE1F /* Build configuration list for PBXNativeTarget "RPBorderlessSegmentedControlDemoTests" */;
 			buildPhases = (
+				2843FE4D8BF24F5484974AD9 /* Check Pods Manifest.lock */,
 				CAB5B36718A9CCB000F2BE1F /* Sources */,
 				CAB5B36818A9CCB000F2BE1F /* Frameworks */,
 				CAB5B36918A9CCB000F2BE1F /* Resources */,
+				FFFC4F4B8FBC46469992F20B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,6 +266,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2843FE4D8BF24F5484974AD9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		B445FBA5C04249839B97DE74 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,6 +309,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFFC4F4B8FBC46469992F20B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-RPBorderlessSegmentedControlDemoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -453,6 +491,7 @@
 		};
 		CAB5B37F18A9CCB000F2BE1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DB85ABBCDDF43AB9108A518 /* Pods-RPBorderlessSegmentedControlDemoTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RPBorderlessSegmentedControlDemo.app/Contents/MacOS/RPBorderlessSegmentedControlDemo";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -465,6 +504,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+					"FB_REFERENCE_IMAGE_DIR=\"\\\"$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/ReferenceImages\\\"\"",
 				);
 				INFOPLIST_FILE = "RPBorderlessSegmentedControlDemoTests/RPBorderlessSegmentedControlDemoTests-Info.plist";
 				PRODUCT_NAME = RPBorderlessSegmentedControlDemoTests;
@@ -475,6 +515,7 @@
 		};
 		CAB5B38018A9CCB000F2BE1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DB85ABBCDDF43AB9108A518 /* Pods-RPBorderlessSegmentedControlDemoTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RPBorderlessSegmentedControlDemo.app/Contents/MacOS/RPBorderlessSegmentedControlDemo";
 				COMBINE_HIDPI_IMAGES = YES;
